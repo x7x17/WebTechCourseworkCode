@@ -11,7 +11,7 @@ if (isset($_POST['update'])) {
     $userEmail = $_SESSION["userEmail"];
 
     if (empty($userNewBio) | empty($userMobile) | empty($userInstagramTag)) {
-        header("location: ../Web%20Tech%20Coursework/profile.php?error=emptyinput");
+        header("location: ../profile.php?error=emptyinput");
         exit(); 
     } 
    
