@@ -74,6 +74,22 @@ mysqli_close($conn);
 
 </div>
 
+<section>
+    <div id='yourpos'></div>
+
+    <script>
+
+        
+    function myFunction(position){
+        document.getElementById('yourpos').innerHTML = "Lat: "+position.coords.latitude+", Lon: "+position.coords.longitude;
+    }
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(myFunction)
+    }
+    </script>
+</section>
+
 <?php
     include_once 'footer.php';
 ?>
