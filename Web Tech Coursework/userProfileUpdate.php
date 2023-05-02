@@ -22,21 +22,22 @@ if (isset($_POST['update'])) {
        // Connect to database
        include('includes/dbh.inc.php');
 
-       // Update user information in the database
-       //$sql = "UPDATE profiles
-       //SET profilesBio = '$userNewBio', profilesMobile = '$userMobile', profilesInstagramTag = '$userInstagramTag'
-       //WHERE usersEmail = '$userEmail'";
-
+       //Update user information in the database
        $sql = "UPDATE profiles
-        SET profilesBio = IFNULL('$userNewBio', profilesBio),
-            profilesMobile = IFNULL('$userMobile', profilesMobile),
-            profilesInstagramTag = IFNULL('$userInstagramTag', profilesInstagramTag)
-        WHERE usersEmail = '$userEmail'";
+       SET profilesBio = '$userNewBio', profilesMobile = '$userMobile', profilesInstagramTag = '$userInstagramTag'
+       WHERE usersEmail = '$userEmail'";
+
+      // $sql = "UPDATE profiles
+        //SET profilesBio = IFNULL('$userNewBio', profilesBio),
+          //  profilesMobile = IFNULL('$userMobile', profilesMobile),
+            //profilesInstagramTag = IFNULL('$userInstagramTag', profilesInstagramTag)
+        //WHERE usersEmail = '$userEmail'";
 
 
        // Execute SQL statement and check for errors
        if(mysqli_query($conn, $sql)){
-            echo "User information updated successfully";
+            //echo "User information updated successfully";
+            header("location: ../profile.php?profileUpdatedSuccessfully");
        } else{
            echo "Error updating user information: " . mysqli_error($conn);
        }
