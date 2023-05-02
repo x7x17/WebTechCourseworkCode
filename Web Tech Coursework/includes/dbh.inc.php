@@ -2,13 +2,22 @@
 
 <?php
 
-$serverName = "localhost";
+//connections to be used for Local Host XAMMP server
 
-$dbUsername = "root";
+//$serverName = "localhost";
 
-$dbPassword = "";
+//$dbUsername = "root";
 
-$dbName = "twitcherdb";
+//$dbPassword = "";
+
+//$dbName = "twitcherdb";
+
+//connections to be used for Keele W/:drive server
+
+$serverName = "katara.scam.keele.ac.uk";
+$dbUsername = "x7x17";
+$dbPassword = "x7x17x7x17";
+$dbName = "x7x17";
 
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);
 
