@@ -14,9 +14,7 @@ if (isset($_POST['update'])) {
         header("location: ../Web%20Tech%20Coursework/profile.php?error=emptyinput");
         exit(); 
     } 
-    print_r($userNewBio);
-    print_r($userMobile);
-    print_r($userInstagramTag);
+   
 
 
        // Connect to database
