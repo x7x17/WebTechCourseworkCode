@@ -1,0 +1,26 @@
+Outstanding Actions: 
+
+1. HTML + CSS structure and styling of the webpages 
+- currently most pages are raw PHP
+
+
+2. Posting System 
+-  uses should be able to post text and images together
+
+3. Following / friends section 
+-  system that allows users to see other users posts 
+
+4.  Profile image
+- uploading and storing an image and having an association to it and a users profile within the database
+
+
+5. database
+- need to create new table for the users profile information e.g. about, interests, home town etc
+- need to create a column for Username and need to amend PHP to account for a username also 
+> column added need to amend PHP now 
+
+
+
+Progress on Tutorial -  https://www.youtube.com/watch?v=_FvzUH03hFc
+
+5.48 minutes in
