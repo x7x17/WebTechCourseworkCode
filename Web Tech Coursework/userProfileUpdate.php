@@ -21,15 +21,15 @@ if (isset($_POST['update'])) {
        include('includes/dbh.inc.php');
 
        //Update user information in the database
-       $sql = "UPDATE profiles
-       SET profilesBio = '$userNewBio', profilesMobile = '$userMobile', profilesInstagramTag = '$userInstagramTag'
-       WHERE usersEmail = '$userEmail'";
+       //$sql = "UPDATE profiles
+       //SET profilesBio = '$userNewBio', profilesMobile = '$userMobile', profilesInstagramTag = '$userInstagramTag'
+       //WHERE usersEmail = '$userEmail'";
 
-      // $sql = "UPDATE profiles
-        //SET profilesBio = IFNULL('$userNewBio', profilesBio),
-          //  profilesMobile = IFNULL('$userMobile', profilesMobile),
-            //profilesInstagramTag = IFNULL('$userInstagramTag', profilesInstagramTag)
-        //WHERE usersEmail = '$userEmail'";
+      $sql = "UPDATE profiles
+        SET profilesBio = IFNULL('$userNewBio', profilesBio),
+           profilesMobile = IFNULL('$userMobile', profilesMobile),
+            profilesInstagramTag = IFNULL('$userInstagramTag', profilesInstagramTag)
+        WHERE usersEmail = '$userEmail'";
 
 
        // Execute SQL statement and check for errors
