@@ -35,7 +35,7 @@ if (isset($_POST['update'])) {
        // Execute SQL statement and check for errors
        if(mysqli_query($conn, $sql)){
             //echo "User information updated successfully";
-            header("location: ../profile.php?success=profileUpdatedSuccessfully");
+            //header("location: ../profile.php?success=profileUpdatedSuccessfully");
        } else{
            echo "Error updating user information: " . mysqli_error($conn);
        }
